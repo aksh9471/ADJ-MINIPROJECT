@@ -66,25 +66,31 @@ MarkWebApp/
 │   └── web.xml
 └── README.md
 
+
 🗄️ Database Configuration
 
 Step 1: Create Database
 CREATE DATABASE IF NOT EXISTS mark_management;
 USE mark_management;
+
 Step 2: Create Table
+
 CREATE TABLE StudentMarks (
-StudentID INT PRIMARY KEY,
-StudentName VARCHAR(100),
-Subject VARCHAR(50),
-Marks INT,
-ExamDate DATE
+    StudentID INT PRIMARY KEY,
+    StudentName VARCHAR(100),
+    Subject VARCHAR(50),
+    Marks INT,
+    ExamDate DATE
 );
+
 ###Step 3: Insert Sample Data
 
 INSERT INTO StudentMarks VALUES
-(78, 'kiran', 'Mathematics', 55, '2023-04-18'),
-(1002, 'Gagan', 'cc', 90, '2024-05-10'),
-(1003, 'Rakshith', 'ada', 60, '2021-04-25'),
+(78, 'Kiran', 'Mathematics', 55, '2023-04-18'),
+(1002, 'Gagan', 'CC', 90, '2024-05-10'),
+(1003, 'Rakshith', 'ADA', 60, '2021-04-25');
+
+
 🔧 Installation & Setup
 Step 1: Environment Setup
 -JDK 8 or above
